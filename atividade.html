@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MoveMais: exercícios simples e uma calculadora para acompanhar sua rotina.">
+    <title>MoveMais | Exercícios para todos os dias</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <main id="app-shell">
+        <nav class="topbar" aria-label="Navegação principal">
+            <a class="brand" href="#inicio" aria-label="MoveMais, início"><span class="brand-mark">+</span><span>move<span>mais</span></span></a>
+            <div class="nav-links"><a class="active" href="#inicio">Início</a><a href="#exercicios">Exercícios</a><a href="#calculadora">Calculadora</a></div>
+            <button class="login-button" id="login-button" type="button">Entrar <span aria-hidden="true">↗</span></button>
+        </nav>
+
+
+        <section class="hero" id="inicio">
+            <div class="hero-copy"><p class="eyebrow"><span></span> movimento para a vida real</p><h1>Seu corpo.<br><em>Seu ritmo.</em><br>Sua evolução.</h1><p class="hero-text">Exercícios simples, feitos para caber na sua rotina. Comece pequeno e sinta a diferença todos os dias.</p><a class="primary-button" href="#exercicios">Começar agora <span aria-hidden="true">→</span></a><div class="hero-note"><span class="avatars" aria-hidden="true"><i>J</i><i>M</i><i>A</i></span><span>+ de 2.400 pessoas em movimento</span></div></div>
+            <div class="hero-art" aria-label="Pessoa praticando exercício ao ar livre"><div class="sun"></div><div class="art-label label-top">01 / energia</div><div class="art-label label-bottom">respire<br><strong>e mova</strong></div><div class="figure"><div class="head"></div><div class="torso"></div><div class="arm arm-left"></div><div class="arm arm-right"></div><div class="leg leg-left"></div><div class="leg leg-right"></div><div class="shoe shoe-left"></div><div class="shoe shoe-right"></div></div><div class="ground"></div></div>
+        </section>
+
+
+        <section class="section exercises" id="exercicios"><div class="section-heading"><div><p class="eyebrow"><span></span> escolha seu movimento</p><h2>Exercícios para<br><em>começar leve.</em></h2></div><p class="section-intro">Uma seleção para ativar o corpo sem complicação. Escolha um e vá no seu tempo.</p></div><div class="exercise-grid"><article class="exercise-card orange-card"><div class="card-number">01</div><div class="exercise-icon">↗</div><h3>Agachamento</h3><p>Fortalece pernas e glúteos</p><span class="duration">○ 3 min</span></article><article class="exercise-card green-card"><div class="card-number">02</div><div class="exercise-icon">⌁</div><h3>Alongamento</h3><p>Solta o corpo e relaxa</p><span class="duration">○ 5 min</span></article><article class="exercise-card dark-card"><div class="card-number">03</div><div class="exercise-icon">✦</div><h3>Prancha</h3><p>Ativa o centro do corpo</p><span class="duration">○ 2 min</span></article></div></section>
+
+
+        <section class="section calculator-section" id="calculadora"><div class="calculator-copy"><p class="eyebrow"><span></span> ferramenta rápida</p><h2>Faça as contas<br>do seu <em>treino.</em></h2><p>Calcule repetições, tempo ou qualquer conta básica para organizar sua próxima sessão.</p></div><div class="calculator" aria-label="Calculadora matemática"><div class="calc-display"><span id="calc-history"></span><strong id="calc-result">0</strong></div><div class="calc-keys"><button class="key muted" data-action="clear">AC</button><button class="key muted" data-action="delete">⌫</button><button class="key operator" data-value="%">%</button><button class="key operator" data-value="÷">÷</button><button class="key" data-value="7">7</button><button class="key" data-value="8">8</button><button class="key" data-value="9">9</button><button class="key operator" data-value="×">×</button><button class="key" data-value="4">4</button><button class="key" data-value="5">5</button><button class="key" data-value="6">6</button><button class="key operator" data-value="−">−</button><button class="key" data-value="1">1</button><button class="key" data-value="2">2</button><button class="key" data-value="3">3</button><button class="key operator" data-value="+">+</button><button class="key wide" data-value="0">0</button><button class="key" data-value=".">.</button><button class="key equals" data-action="equals">=</button></div></div></section>
+        <footer><a class="brand" href="#inicio"><span class="brand-mark">+</span><span>move<span>mais</span></span></a><span>feito para o seu próximo passo.</span><span>© 2025 MoveMais</span></footer>
+    </main>
+
+
+    <section class="error-screen" id="error-screen" aria-hidden="true"><div class="error-mark">!</div><p class="eyebrow"><span></span> algo saiu do caminho</p><h1>Erro <em>400</em></h1><p class="error-text">A página que você procura não foi encontrada.<br>Mas seu próximo movimento ainda está aqui.</p><button class="primary-button" id="back-button" type="button">Voltar para o início <span aria-hidden="true">→</span></button><div class="loading-line" aria-label="Carregando"></div></section>
+    <script src="codigos.js"></script>
+</body>
+</html>
